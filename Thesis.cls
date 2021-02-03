@@ -1,4 +1,4 @@
-%%
+%%###############################################################################
 %% Modified by Ricardo Garcia-Rosas to satisfy the rules established by Monash University's Research Higher Degrees Committee as of 4th of June 2019.
 %% Guidelines can be found at: https://gradresearch.unimelb.edu.au/__data/assets/pdf_file/0004/2027839/Preparation-of-GR-theses-rules.pdf
 %%
@@ -8,6 +8,11 @@
 %% generated with the docstrip utility.
 %%
 %% Created by Steve R. Gunn, modified by Sunil Patel: www.sunilpatel.co.uk
+%%###############################################################################
+%% Modified based on above sources, it is originally designed for The University of Melbourne, I have
+%% done some amendment for Monash university usage. 
+%% amend by xingbod@gmail.com
+%%###############################################################################
 
 \NeedsTeXFormat{LaTeX2e}[1996/12/01]
 \ProvidesClass{Thesis}
