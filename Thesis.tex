@@ -1,0 +1,198 @@
+%%
+%% Modified by Ricardo Garcia-Rosas to satisfy the rules established by the University of Melbourne's Research Higher Degrees Committee as of 4th of June 2019.
+%% Guidelines can be found at: https://gradresearch.unimelb.edu.au/__data/assets/pdf_file/0004/2027839/Preparation-of-GR-theses-rules.pdf
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% IMPORTANT NOTE TO AUTHOR:
+%% As part of the guidelines, the use of the university logo is not permitted. This template contains it to make it easier to find/recognise in the Overleaf Gallery. To make the template compliant please go to 'Thesis.cls' and comment out the \includegraphics command in line 217 (it is clearly highlited).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% ----------------------------------------------------------------
+%% Thesis.tex -- MAIN FILE (the one that you compile with LaTeX)
+%% ---------------------------------------------------------------- 
+
+% Set up the document
+\documentclass[a4paper, 11pt, oneside]{Thesis}  % Use the "Thesis" style, based on the ECS Thesis style by Steve Gunn
+%
+% Put your figures in this directory
+\graphicspath{Figures/}  % Location of the graphics files (set up for graphics to be in PDF format)
+%
+
+% Include any extra LaTeX packages required
+\usepackage[square, numbers, comma, sort&compress]{natbib}  % Use the "Natbib" style for the references in the Bibliography
+\usepackage{verbatim}  % Needed for the "comment" environment to make LaTeX comments
+\usepackage{vector}  % Allows "\bvec{}" and "\buvec{}" for "blackboard" style bold vectors in maths
+\hypersetup{urlcolor=blue, colorlinks=true}  % Colours hyperlinks in blue, but this can be distracting if there are many links.
+
+%% ----------------------------------------------------------------
+\begin{document}
+\frontmatter      % Begin Roman style (i, ii, iii, iv...) page numbering
+
+%
+\UNIVERSITY{{Monash University}}    
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Update your department and school here:
+\school{{School of Information Technology}}
+\gradtime{{2021}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Set up the Title Page
+% Change your thesis title and your information here
+\title  {Thesis Title Here}
+\authors  {\texorpdfstring
+            {\href{your web site or email address}{Author Name }}
+            {Author Name}
+            }
+\addresses  {\groupname\\\deptname\\\univname}  % Do not change this here, instead these must be set in the "Thesis.cls" file, please look through it instead
+\date       {\today}
+\subject    {}
+\keywords   {Biometrics}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\maketitle
+%% ----------------------------------------------------------------
+
+\setstretch{1.3}  % It is better to have smaller font and larger line spacing than the other way round
+
+% Define the page headers using the FancyHdr package and set up for one-sided printing
+\fancyhead{}  % Clears all page headers and footers
+\rhead{\thepage}  % Sets the right side header to show the page number
+\lhead{}  % Clears the left side page header
+
+\pagestyle{fancy}  % Finally, use the "fancy" page style to implement the FancyHdr headers
+
+%% ----------------------------------------------------------------
+% The copyright Page
+\input{Preamble/copyright.tex}
+\clearpage  % copyright ended, start a new page
+
+\input{Preamble/Abstract.tex}
+
+\clearpage  % Abstract ended, start a new page
+
+%% ----------------------------------------------------------------
+% Declaration Page required for the Thesis, your institution may give you a different text to place here
+\input{Preamble/Declaration.tex}
+\clearpage  % Declaration ended, now start a new page
+
+%% ----------------------------------------------------------------
+% Declaration of publications Page required for the Thesis, your institution may give you a different text to place here
+\input{Preamble/Declaration_publications.tex}
+\clearpage  % Declaration ended, now start a new page
+
+%% ----------------------------------------------------------------
+% Publications Page required for the Thesis, your institution may give you a different text to place here
+\input{Preamble/Publications.tex}
+\clearpage  % Declaration ended, now start a new page
+
+%% ----------------------------------------------------------------
+% Preface Page required for the Thesis, your institution may give you a different text to place here
+\input{Preamble/Preface.tex}
+\clearpage  % Preface ended, now start a new page
+
+%% ----------------------------------------------------------------
+% The Acknowledgements page, for thanking everyone
+\setstretch{1.3}  % Reset the line-spacing to 1.3 for body text (if it has changed)
+\input{Preamble/Acknowledgements.tex}
+\clearpage  % End of the Acknowledgements
+%% ----------------------------------------------------------------
+
+\pagestyle{fancy}  %The page style headers have been "empty" all this time, now use the "fancy" headers as defined before to bring them back
+
+
+%% ----------------------------------------------------------------
+\lhead{\emph{Contents}}  % Set the left side page header to "Contents"
+\tableofcontents  % Write out the Table of Contents
+
+%% ----------------------------------------------------------------
+\lhead{\emph{List of Figures}}  % Set the left side page header to "List if Figures"
+\listoffigures  % Write out the List of Figures
+
+%% ----------------------------------------------------------------
+\lhead{\emph{List of Tables}}  % Set the left side page header to "List of Tables"
+\listoftables  % Write out the List of Tables
+
+%% ----------------------------------------------------------------
+\setstretch{1.5}  % Set the line spacing to 1.5, this makes the following tables easier to read
+\clearpage  % Start a new page
+\lhead{\emph{Abbreviations}}  % Set the left side page header to "Abbreviations"
+\listofsymbols{ll}  % Include a list of Abbreviations (a table of two columns)
+{
+% \textbf{Acronym} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or \\
+\textbf{LAH} & \textbf{L}ist \textbf{A}bbreviations \textbf{H}ere \\
+
+}
+
+%% ----------------------------------------------------------------
+\clearpage  % Start a new page
+\lhead{\emph{Constants}}  % Set the left side page header to "Physical Constants"
+\listofconstants{lrcl}  % Include a list of Physical Constants (a four column table)
+{
+% Constant Name & Symbol & = & Constant Value (with units) \\
+Speed of Light & $c$ & $=$ & $2.997\ 924\ 58\times10^{8}\ \mbox{ms}^{-\mbox{s}}$ (exact)\\
+
+}
+
+%% ----------------------------------------------------------------
+\clearpage  %Start a new page
+\lhead{\emph{Symbols}}  % Set the left side page header to "Symbols"
+\listofnomenclature{lll}  % Include a list of Symbols (a three column table)
+{
+% symbol & name & unit \\
+$a$ & distance & m \\
+$P$ & power & W (Js$^{-1}$) \\
+& & \\ % Gap to separate the Roman symbols from the Greek
+$\omega$ & angular frequency & rads$^{-1}$ \\
+}
+%% ----------------------------------------------------------------
+% End of the pre-able, contents and lists of things
+
+
+%% ----------------------------------------------------------------
+\mainmatter	  % Begin normal, numeric (1,2,3...) page numbering
+\pagestyle{fancy}  % Return the page headers back to the "fancy" style
+
+% Include the chapters of the thesis, as separate files
+% Just uncomment the lines as you write the chapters
+
+\input{Chapters/Chapter1} % Introduction
+
+%\input{Chapters/Chapter2} % Background Theory 
+
+%\input{Chapters/Chapter3} % Experimental Setup
+
+%\input{Chapters/Chapter4} % Experiment 1
+
+%\input{Chapters/Chapter5} % Experiment 2
+
+%\input{Chapters/Chapter6} % Results and Discussion
+
+%\input{Chapters/Chapter7} % Conclusion
+
+%% ----------------------------------------------------------------
+% Now begin the Appendices, including them as separate files
+
+\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+
+\appendix % Cue to tell LaTeX that the following 'chapters' are Appendices
+
+\input{Appendices/AppendixA}	% Appendix Title
+
+%\input{Appendices/AppendixB} % Appendix Title
+
+%\input{Appendices/AppendixC} % Appendix Title
+
+\addtocontents{toc}{\vspace{2em}}  % Add a gap in the Contents, for aesthetics
+\backmatter
+
+%% ----------------------------------------------------------------
+\label{Bibliography}
+\lhead{\emph{Bibliography}}  % Change the left side page header to "Bibliography"
+\bibliographystyle{unsrtnat}  % Use the "unsrtnat" BibTeX style for formatting the Bibliography
+\bibliography{Bibliography}  % The references (bibliography) information are stored in the file named "Bibliography.bib"
+
+\end{document}  % The End
+%% ----------------------------------------------------------------
