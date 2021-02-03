@@ -42,7 +42,7 @@
 \thispagestyle{plain}
 % \null\vfil
 %\vskip 60\p@
-\begin{left}{\huge\bf{Copyright~notice}\par}\end{left}
+\begin{left}{\Huge\bf{Copyright~notice}\par}\end{left}
 %\vskip 60\p@
 {\normalsize #1}
 \vfil\vfil\null
@@ -56,7 +56,7 @@
 \thispagestyle{plain}
 % \null\vfil
 %\vskip 60\p@
-\begin{left}{\huge\bf{Abstract}\par}\end{left}
+\begin{left}{\Huge\bf{Abstract}\par}\end{left}
 %\vskip 60\p@
 {\normalsize #1}
 \vfil\vfil\null
@@ -69,7 +69,7 @@
 \thispagestyle{plain}
 % \null\vfil
 %\vskip 60\p@
-\begin{left}{\huge\bf Declaration\par}\end{left}
+\begin{left}{\Huge\bf Declaration\par}\end{left}
 %\vskip 60\p@
 {\normalsize #1}
 \vfil\vfil\null
@@ -84,7 +84,7 @@
 \thispagestyle{plain}
 % \null\vfil
 %\vskip 60\p@
-\begin{left}{\huge\bf Publications~during~enrolment\par}\end{left}
+\begin{left}{\Huge\bf Publications~during~enrolment\par}\end{left}
 %\vskip 60\p@
 {\normalsize #1}
 \vfil\vfil\null
@@ -97,7 +97,7 @@
 \thispagestyle{plain}
 % \null\vfil
 %\vskip 60\p@
-\begin{left}{\huge\bf Thesis~including~published~works~declaration\par}\end{left}
+\begin{left}{\Huge\bf Thesis~including~published~works~declaration\par}\end{left}
 %\vskip 60\p@
 {\normalsize #1}
 \vfil\vfil\null
@@ -109,7 +109,7 @@
 \thispagestyle{plain}
 \null\vfil
 %\vskip 60\p@
-\begin{center}{\huge\bf Preface\par}\end{center}
+\begin{center}{\Huge\bf Preface\par}\end{center}
 %\vskip 60\p@
 {\normalsize #1}
 \vfil\vfil\null
