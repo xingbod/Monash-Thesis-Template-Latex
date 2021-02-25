@@ -42,11 +42,11 @@
 \thispagestyle{plain}
 % \null\vfil
 %\vskip 60\p@
-\begin{left}{\Huge\bf{Copyright~notice}\par}\end{left}
+{\bf{Copyright~notice}}
 %\vskip 60\p@
 {\normalsize #1}
 \vfil\vfil\null
-%\cleardoublepage
+% \cleardoublepage
 }
 
 
@@ -56,7 +56,7 @@
 \thispagestyle{plain}
 % \null\vfil
 %\vskip 60\p@
-\begin{left}{\Huge\bf{Abstract}\par}\end{left}
+{\bf{Abstract}}
 %\vskip 60\p@
 {\normalsize #1}
 \vfil\vfil\null
@@ -69,7 +69,7 @@
 \thispagestyle{plain}
 % \null\vfil
 %\vskip 60\p@
-\begin{left}{\Huge\bf Declaration\par}\end{left}
+{\bf{Declaration}}
 %\vskip 60\p@
 {\normalsize #1}
 \vfil\vfil\null
@@ -84,7 +84,7 @@
 \thispagestyle{plain}
 % \null\vfil
 %\vskip 60\p@
-\begin{left}{\Huge\bf Publications~during~enrolment\par}\end{left}
+{\bf{Publications~during~enrolment}}
 %\vskip 60\p@
 {\normalsize #1}
 \vfil\vfil\null
@@ -97,7 +97,7 @@
 \thispagestyle{plain}
 % \null\vfil
 %\vskip 60\p@
-\begin{left}{\Huge\bf Thesis~including~published~works~declaration\par}\end{left}
+{\bf{Thesis~including~published~works~declaration}}
 %\vskip 60\p@
 {\normalsize #1}
 \vfil\vfil\null
@@ -109,7 +109,7 @@
 \thispagestyle{plain}
 \null\vfil
 %\vskip 60\p@
-\begin{center}{\Huge\bf Preface\par}\end{center}
+{\bf{Preface}}
 %\vskip 60\p@
 {\normalsize #1}
 \vfil\vfil\null
@@ -314,33 +314,33 @@
   \global\let\and\relax
   \cleardoublepage
 }
-\newenvironment{abstract}
-{
-  \btypeout{Abstract Page}
-  \thispagestyle{empty}
-%   \null\vfil
-\textbf{Abstract}
-  \begin{center}
-    \setlength{\parskip}{0pt}
-    {\normalsize \UNIVNAME \par}
-    \bigskip
-    {\huge{\textit{Abstract}} \par}
-    \bigskip
-    {\normalsize \deptname \par}
-    {\normalsize \schoolname \par}
-    \bigskip
-    {\normalsize Doctor of Philosophy\par}
-    \bigskip
-    {\normalsize\bf \@title \par}
-    \medskip
-    {\normalsize by \authornames \par}
-    \bigskip
-  \end{center}
-}
-{
-  \vfil\vfil\vfil\null
-  \cleardoublepage
-}
+% \newenvironment{abstractenv}
+% {
+%   \btypeout{Abstract Page}
+%   \thispagestyle{empty}
+% %   \null\vfil
+% \textbf{Abstract}
+%   \begin{center}
+%     \setlength{\parskip}{0pt}
+%     {\normalsize \UNIVNAME \par}
+%     \bigskip
+%     {\huge{\textit{Abstract}} \par}
+%     \bigskip
+%     {\normalsize \deptname \par}
+%     {\normalsize \schoolname \par}
+%     \bigskip
+%     {\normalsize Doctor of Philosophy\par}
+%     \bigskip
+%     {\normalsize\bf \@title \par}
+%     \medskip
+%     {\normalsize by \authornames \par}
+%     \bigskip
+%   \end{center}
+% }
+% {
+%   \vfil\vfil\vfil\null
+%   \cleardoublepage
+% }
 \addtocounter{secnumdepth}{1}
 \setcounter{tocdepth}{6}
 \newcounter{dummy}
