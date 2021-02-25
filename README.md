@@ -9,3 +9,4 @@ Please star this project if you like it.
 
 [Thesis Sample](https://github.com/charlesLucky/Monash-Thesis-Template/blob/main/Monash_Thesis_Template.pdf?raw=true).
 
+<img src="https://github.com/charlesLucky/Monash-Thesis-Template/blob/main/Monash_Thesis_Template.pdf" alt="Thesis Sample"/>
