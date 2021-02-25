@@ -11,14 +11,14 @@ Please star this project if you like it.
 
 The cover page:
 
-![Cover Page](https://github.com/charlesLucky/Monash-Thesis-Template/blob/main/Figures/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210225124717.png)
+![Cover Page](https://github.com/charlesLucky/Monash-Thesis-Template/blob/main/Figures/20210225124717.png)
 
 The copyright page:
 
-![Copyright Page](https://github.com/charlesLucky/Monash-Thesis-Template/blob/main/Figures/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210225124727.png)
+![Copyright Page](https://github.com/charlesLucky/Monash-Thesis-Template/blob/main/Figures/20210225124727.png)
 
 The chapter page:
 
-![Chapter Page](https://github.com/charlesLucky/Monash-Thesis-Template/blob/main/Figures/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210225124753.png)
+![Chapter Page](https://github.com/charlesLucky/Monash-Thesis-Template/blob/main/Figures/20210225124753.png)
 
 
