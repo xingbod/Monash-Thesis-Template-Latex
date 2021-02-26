@@ -285,6 +285,8 @@
     
       \smallskip
       {\LARGE \authornames \par}
+      \smallskip
+      Doctor of Philosophy
       \vfill
       \vfill
       {\large A Thesis Submitted for the Degree of Doctor of Philosophy at \par}
@@ -433,15 +435,20 @@
 \begin{longtable}[c]{#1}#2\end{longtable}\par
     \cleardoublepage
 }
-\newcommand\acknowledgements[1]{
+
+\newcommand\ack[1]{
 \btypeout{Acknowledgements}
 \addtotoc{Acknowledgements}
 \thispagestyle{plain}
-\begin{center}{\huge{\textit{Acknowledgements}} \par}\end{center}
+% \null\vfil
+%\vskip 60\p@
+{\noindent \bf{Acknowledgements}}
+%\vskip 60\p@
 {\normalsize #1}
 \vfil\vfil\null
-
+%\cleardoublepage
 }
+
 \newcommand\dedicatory[1]{
 \btypeout{Dedicatory}
 \thispagestyle{plain}
