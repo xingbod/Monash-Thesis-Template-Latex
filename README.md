@@ -1,11 +1,10 @@
 # Monash Thesis Latex Template
 
-A thesis latex template for Monash University.
+A thesis latex template for Monash University. It can be used directly on overleaf. It is modified from University of Melbourne's template, and satisfy the requirement of Monash University. 
 
-It can be used directly on overleaf. It is modified from University of Melbourne's template, and satisfy the requirement of Monash University. 
+You can also access it on [overleaf](https://www.overleaf.com/latex/templates/monash-thesis-template-latex/fcjzjygysncw).
 
-
-Please star this project if you like it. 
+Please star this project if you like it. Happy writing!
 
 [Thesis Sample can be found here!](https://github.com/charlesLucky/Monash-Thesis-Template/blob/main/Monash_Thesis_Template.pdf?raw=true).
 
