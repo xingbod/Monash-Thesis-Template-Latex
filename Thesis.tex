@@ -9,7 +9,7 @@
 %%
 %% ----------------------------------------------------------------
 %% Thesis.tex -- MAIN FILE (the one that you compile with LaTeX)
-%% ---------------------------------------------------------------- 
+%% ----------------------------------------------------------------
 
 % Set up the document
 \documentclass[a4paper, 11pt, oneside]{Thesis}  % Use the "Thesis" style, based on the ECS Thesis style by Steve Gunn
@@ -29,7 +29,7 @@
 \frontmatter      % Begin Roman style (i, ii, iii, iv...) page numbering
 
 %
-\UNIVERSITY{{Monash University}}    
+\UNIVERSITY{{Monash University}}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Update your department and school here:
@@ -158,9 +158,12 @@ $\omega$ & angular frequency & rads$^{-1}$ \\
 % Include the chapters of the thesis, as separate files
 % Just uncomment the lines as you write the chapters
 
+\fancyhead{}  % Clears all page headers and footers
+\rhead{\thepage}  % Sets the right side header to show the page number
+\lhead{}  % Clears the left side page header
 \input{Chapters/Chapter1} % Introduction
 
-%\input{Chapters/Chapter2} % Background Theory 
+%\input{Chapters/Chapter2} % Background Theory
 
 %\input{Chapters/Chapter3} % Experimental Setup
 
